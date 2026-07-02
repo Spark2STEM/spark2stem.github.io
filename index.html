@@ -376,6 +376,18 @@
             justify-content: center;
         }
 
+        /* Learning View Variant: Makes it bigger, bolder, and prettily styled */
+        .orbit-wrap.orbit-large {
+            width: 440px;
+            height: 440px;
+            animation: gentle-float 6s ease-in-out infinite alternate;
+        }
+
+        @keyframes gentle-float {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-12px); }
+        }
+
         .orbit-ring {
             position: absolute;
             border: 1.5px dashed rgba(11,18,41,0.14);
@@ -427,15 +439,25 @@
             box-shadow: 0 8px 18px rgba(11,18,41,0.18);
             animation: spin-rev 50s linear infinite;
         }
+        .orbit-wrap.orbit-large .orbit-chip {
+            width: 58px;
+            height: 58px;
+            font-size: 1.25rem;
+        }
         .orbit-node.rev .orbit-chip { animation: spin 34s linear infinite; }
 
         .chip-s { background: var(--sci); top: -26px; left: 50%; transform: translateX(-50%); }
         .chip-t { background: var(--tech); bottom: -26px; left: 50%; transform: translateX(-50%); }
         .chip-e { background: var(--eng); top: 50%; left: -26px; transform: translateY(-50%); width: 44px; height: 44px; font-size: 1rem; }
         .chip-m { background: var(--math); top: 50%; right: -26px; transform: translateY(-50%); width: 44px; height: 44px; font-size: 1rem; }
+        
+        .orbit-wrap.orbit-large .chip-e, .orbit-wrap.orbit-large .chip-m {
+            width: 50px; height: 50px; font-size: 1.1rem;
+        }
 
         .blob-hero-1 { width: 420px; height: 420px; background: var(--indigo); opacity: 0.10; top: -120px; right: -80px; }
         .blob-hero-2 { width: 320px; height: 320px; background: var(--coral); opacity: 0.10; bottom: -100px; left: -60px; }
+        .blob-learning { width: 500px; height: 500px; background: linear-gradient(135deg, var(--indigo), var(--coral)); opacity: 0.12; top: 50%; left: 50%; transform: translate(-50%, -50%); filter: blur(80px); }
 
         /* ---------------- ABOUT / CURRICULUM ---------------- */
         .about-section {
@@ -1158,6 +1180,19 @@
         .pitch-banner-content .btn-primary { background: var(--paper); color: var(--ink); box-shadow: 0 10px 26px rgba(0,0,0,0.25); }
         .pitch-banner-content .btn-primary:hover { background: var(--amber); color: var(--ink); }
 
+        /* ---------------- LEARNING VIEW ---------------- */
+        .learning-container {
+            background-color: var(--paper);
+            color: var(--ink);
+            padding: 40px 8% 120px 8%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
         /* ---------------- FOOTER ---------------- */
         footer {
             background-color: var(--navy);
@@ -1265,6 +1300,12 @@
             .feature-right { width: 100%; }
             .footer-links { gap: 20px; }
             .orbit-wrap { width: 280px; height: 280px; }
+            .orbit-wrap.orbit-large { width: 320px; height: 320px; }
+            .orbit-wrap.orbit-large .orbit-chip { width: 46px; height: 46px; font-size: 1rem; }
+            .orbit-wrap.orbit-large .chip-s { top: -23px; }
+            .orbit-wrap.orbit-large .chip-t { bottom: -23px; }
+            .orbit-wrap.orbit-large .chip-e { left: -23px; width: 40px; height: 40px; }
+            .orbit-wrap.orbit-large .chip-m { right: -23px; width: 40px; height: 40px; }
         }
 
         @media (max-width: 480px) {
@@ -1273,7 +1314,7 @@
             header { padding: 16px 5%; }
             .about-section, .get-involved-section, .start-chapter-container,
             .volunteer-container, .books-container, .chapters-info-section,
-            .chapters-pitch-banner { padding-left: 5%; padding-right: 5%; }
+            .chapters-pitch-banner, .learning-container { padding-left: 5%; padding-right: 5%; }
             .hero-container { padding-left: 5%; padding-right: 5%; }
         }
     </style>
@@ -1291,6 +1332,7 @@
             <nav id="siteNav">
                 <a onclick="switchView('home-view')">Home</a>
                 <a onclick="switchView('books-view')">Books</a>
+                <a onclick="switchView('learning-view')">Learning</a>
                 <a onclick="switchView('chapters-view')">Our Chapters</a>
                 <a onclick="switchView('volunteer-view')">Volunteering</a>
                 <a href="#contact" class="btn-nav-contact" onclick="closeNav()">Contact Us</a>
@@ -1514,6 +1556,37 @@
                     </div>
 
                 </div>
+            </section>
+        </div>
+
+        <div id="learning-view" class="page-view">
+            <section class="subpage-hero">
+                <h1 class="display-font">Learning</h1>
+                <p class="subpage-sub">Interactive lesson models, STEM based learning, and Workshops coming soon!! .</p>
+            </section>
+            <section class="learning-container">
+                <div class="blob blob-learning"></div>
+                <div class="orbit-wrap orbit-large" style="margin-bottom: 50px;">
+                    <div class="orbit-ring r1" style="border-color: rgba(11,18,41,0.2);"></div>
+                    <div class="orbit-ring r2" style="border-color: rgba(11,18,41,0.2);"></div>
+                    <div class="orbit-node">
+                        <div class="orbit-chip chip-s">S</div>
+                    </div>
+                    <div class="orbit-node">
+                        <div class="orbit-chip chip-t">T</div>
+                    </div>
+                    <div class="orbit-node rev">
+                        <div class="orbit-chip chip-e">E</div>
+                    </div>
+                    <div class="orbit-node rev">
+                        <div class="orbit-chip chip-m">M</div>
+                    </div>
+                    <div class="orbit-core" style="width: 62%; height: 62%; border-width: 8px;">
+                        <img src="IMG_4433.png" alt="Spark2STEM Logo">
+                    </div>
+                </div>
+                <h2 class="display-font" style="font-size: 3rem; margin-bottom: 12px; text-align: center;">Coming soon!</h2>
+                <p style="color: var(--ink-soft); font-size: 1.15rem; max-width: 500px; text-align: center; line-height: 1.6;">We are currently assembling our ultimate learning resources repository. Check back shortly for custom modules!</p>
             </section>
         </div>
 
