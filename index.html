@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -406,7 +406,7 @@
             height: 58%;
             border-radius: 50%;
             overflow: hidden;
-            box-shadow: 0 20px 50px rgba(11,18,41,0.18);
+            box-shadow: 0 20px 50px rgba(11, 18, 41, 0.18);
             border: 6px solid var(--paper);
             background: var(--paper);
             z-index: 3;
@@ -436,7 +436,7 @@
             font-weight: 700;
             font-size: 1.15rem;
             color: var(--paper);
-            box-shadow: 0 8px 18px rgba(11,18,41,0.18);
+            box-shadow: 0 8px 18px rgba(11, 18, 41, 0.18);
             animation: spin-rev 50s linear infinite;
         }
         .orbit-wrap.orbit-large .orbit-chip {
@@ -522,7 +522,7 @@
             transition: all 0.3s var(--ease);
         }
 
-        .tab-pill:hover { border-color: var(--ink); transform: translateY(-2px); }
+        .tab-pill:hover { border-color: var(--line); transform: translateY(-2px); }
 
         .tab-pill.active {
             background-color: var(--ink);
@@ -794,13 +794,13 @@
             border: none;
             display: inline-block;
             text-align: center;
-            box-shadow: 0 6px 18px rgba(11,18,41,0.18);
+            box-shadow: 0 6px 18px rgba(11, 18, 41, 0.18);
             transition: all 0.35s var(--ease);
         }
 
         .btn-chapter-cta:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 26px rgba(11,18,41,0.24);
+            box-shadow: 0 12px 26px rgba(11, 18, 41, 0.24);
             background-color: var(--coral);
         }
         .btn-chapter-cta:active { transform: translateY(-1px); }
@@ -1086,6 +1086,24 @@
 
         .books-empty h3 { font-family: 'Space Grotesk', sans-serif; color: var(--ink); font-size: 1.25rem; margin-bottom: 8px; }
 
+        /* Custom Styles for Lesson and Book Text Metadata Cards */
+        .lesson-meta {
+            padding: 4px 4px 0 4px;
+        }
+        .lesson-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+        .lesson-author {
+            font-size: 0.88rem;
+            color: var(--ink-soft);
+            font-weight: 500;
+        }
+
         /* ---------------- CHAPTERS VIEW ---------------- */
         .chapters-info-section { background-color: var(--paper); color: var(--ink); padding: 40px 8% 100px 8%; }
         .chapters-info-content { max-width: 850px; margin: 0 auto; width: 100%; }
@@ -1191,6 +1209,21 @@
             justify-content: center;
             position: relative;
             overflow: hidden;
+        }
+
+        .learning-sections-wrapper {
+            width: 100%;
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+        .learning-heading-row {
+            margin-bottom: 8px;
+        }
+        .learning-heading-row h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
         }
 
         /* ---------------- FOOTER ---------------- */
@@ -1559,9 +1592,43 @@
                     </div>
 
                     <div class="book-card" data-categories="science">
-                        <a href="https://drive.google.com/file/d/1_xKNs9waYa_mU5fUSmKuUHjyrezCOPBz/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                        <a href="https://drive.google.com/file/d/1_xKNs9waYa_mU5fUSmKuUHjyrezCOPBz/view" target="_blank" class="book-preview-wrapper">
                             <div class="book-preview-viewport">
                                 <iframe src="https://drive.google.com/file/d/1_xKNs9waYa_mU5fUSmKuUHjyrezCOPBz/preview" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">Detective Leo's Backyard Safari (5 senses)</h3>
+                                <p class="lesson-author">by Jibran</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-science">Science</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="science">
+                        <a href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe src="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">The Planets</h3>
+                                <p class="lesson-author">by Weza Mwiwa</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-science">Science</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="science">
+                        <a href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe src="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">Why does Ice Cream Melt Faster than Ice?</h3>
+                                <p class="lesson-author">By : Parishay Adnan</p>
                             </div>
                         </a>
                         <div class="book-tags">
@@ -1585,31 +1652,68 @@
         <div id="learning-view" class="page-view">
             <section class="subpage-hero">
                 <h1 class="display-font">Learning</h1>
-                <p class="subpage-sub">Interactive lesson models, STEM based learning, and Workshops coming soon!! .</p>
+                <p class="subpage-sub">Interactive lesson models, STEM based learning courses, and educational workshops.</p>
             </section>
+            
             <section class="learning-container">
-                <div class="blob blob-learning"></div>
-                <div class="orbit-wrap orbit-large" style="margin-bottom: 50px;">
-                    <div class="orbit-ring r1" style="border-color: rgba(11,18,41,0.2);"></div>
-                    <div class="orbit-ring r2" style="border-color: rgba(11,18,41,0.2);"></div>
-                    <div class="orbit-node">
-                        <div class="orbit-chip chip-s">S</div>
+                <div class="learning-sections-wrapper">
+                    <div class="learning-heading-row">
+                        <h2 class="display-font">Interactive Lesson Models</h2>
                     </div>
-                    <div class="orbit-node">
-                        <div class="orbit-chip chip-t">T</div>
+
+                    <div class="filter-bar" id="learningFilterBar">
+                        <button class="filter-pill active" data-filter="all" onclick="filterLessons('all', this)">All</button>
+                        <button class="filter-pill" data-filter="science" onclick="filterLessons('science', this)">Science</button>
+                        <button class="filter-pill" data-filter="technology" onclick="filterLessons('technology', this)">Technology</button>
+                        <button class="filter-pill" data-filter="engineering" onclick="filterLessons('engineering', this)">Engineering</button>
+                        <button class="filter-pill" data-filter="math" onclick="filterLessons('math', this)">Math</button>
+                        <button class="filter-pill" data-filter="finance" onclick="filterLessons('finance', this)">Finance</button>
+                        <button class="filter-pill" data-filter="coding" onclick="filterLessons('coding', this)">Coding</button>
                     </div>
-                    <div class="orbit-node rev">
-                        <div class="orbit-chip chip-e">E</div>
+
+                    <div class="books-preview-grid" id="lessonsGrid">
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/1brNsWJ_I7nfz0aCS3s1EqgDi2qFdrHvw/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe src="https://drive.google.com/file/d/1brNsWJ_I7nfz0aCS3s1EqgDi2qFdrHvw/preview" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Macronutrients</h3>
+                                    <p class="lesson-author">by Sidhvidheer Janapareddy</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="coding">
+                            <a href="https://drive.google.com/file/d/1o3GOMn59uILx0pkMoWPnWJ-fy_0JEfxi/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe src="https://drive.google.com/file/d/1o3GOMn59uILx0pkMoWPnWJ-fy_0JEfxi/preview" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Intro to Block Coding</h3>
+                                    <p class="lesson-author">by Arnav Deokule</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-coding">Coding</span>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="orbit-node rev">
-                        <div class="orbit-chip chip-m">M</div>
+
+                    <div class="books-empty" id="lessonsEmpty">
+                        <div class="empty-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        </div>
+                        <h3 class="display-font">New lessons on the way</h3>
+                        <p>We're developing more items for this category — check back soon!</p>
                     </div>
-                    <div class="orbit-core" style="width: 62%; height: 62%; border-width: 8px;">
-                        <img src="IMG_4433.png" alt="Spark2STEM Logo">
-                    </div>
+
                 </div>
-                <h2 class="display-font" style="font-size: 3rem; margin-bottom: 12px; text-align: center;">Coming soon!</h2>
-                <p style="color: var(--ink-soft); font-size: 1.15rem; max-width: 500px; text-align: center; line-height: 1.6;">Interactive lesson models, STEM based learning, and workshops coming soon!</p>
             </section>
         </div>
 
@@ -1748,10 +1852,10 @@
 
         /* Book category filter */
         function filterBooks(category, btn) {
-            document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('#filterBar .filter-pill').forEach(p => p.classList.remove('active'));
             btn.classList.add('active');
 
-            const cards = document.querySelectorAll('.book-card');
+            const cards = document.querySelectorAll('#booksGrid .book-card');
             let visibleCount = 0;
 
             cards.forEach(card => {
@@ -1762,6 +1866,25 @@
             });
 
             const emptyState = document.getElementById('booksEmpty');
+            emptyState.classList.toggle('show', visibleCount === 0);
+        }
+
+        /* Lesson category filter */
+        function filterLessons(category, btn) {
+            document.querySelectorAll('#learningFilterBar .filter-pill').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+
+            const cards = document.querySelectorAll('#lessonsGrid .lesson-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const cats = (card.getAttribute('data-categories') || '').split(' ');
+                const match = category === 'all' || cats.includes(category);
+                card.classList.toggle('hidden-card', !match);
+                if (match) visibleCount++;
+            });
+
+            const emptyState = document.getElementById('lessonsEmpty');
             emptyState.classList.toggle('show', visibleCount === 0);
         }
 
