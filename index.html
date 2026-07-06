@@ -1499,16 +1499,109 @@
                 </div>
             </section>
         </div>
-<div class="book-card" data-categories="science">
-                        <a href="https://drive.google.com/file/d/1_xKNs9waYa_mU5fUSmKuUHjyrezCOPBz/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                            <div class="book-preview-viewport">
-                                <iframe src="https://drive.google.com/file/d/1_xKNs9waYa_mU5fUSmKuUHjyrezCOPBz/preview" allow="autoplay"></iframe>
-                            </div>
-                        </a>
-                        <div class="book-tags">
-                            <span class="book-tag tag-science">Science</span>
+
+        <div id="books-view" class="page-view">
+            <section class="subpage-hero">
+                <h1 class="display-font">Our Books</h1>
+                <p class="subpage-sub">Curriculum and activity guides designed to spark curiosity across every corner of STEM.</p>
+            </section>
+
+            <section class="books-container">
+                <div class="books-heading-row">
+                    <h2 class="display-font">Curriculum &amp; Activity Guides</h2>
+                </div>
+
+                <div class="filter-bar" id="filterBar">
+                    <button class="filter-pill active" data-filter="all" onclick="filterBooks('all', this)">All</button>
+                    <button class="filter-pill" data-filter="science" onclick="filterBooks('science', this)">Science</button>
+                    <button class="filter-pill" data-filter="technology" onclick="filterBooks('technology', this)">Technology</button>
+                    <button class="filter-pill" data-filter="engineering" onclick="filterBooks('engineering', this)">Engineering</button>
+                    <button class="filter-pill" data-filter="math" onclick="filterBooks('math', this)">Math</button>
+                    <button class="filter-pill" data-filter="finance" onclick="filterBooks('finance', this)">Finance</button>
+                    <button class="filter-pill" data-filter="coding" onclick="filterBooks('coding', this)">Coding</button>
+                </div>
+
+<div class="books-preview-grid" id="booksGrid">
+
+    <div class="book-card" data-categories="science engineering">
+        <a href="https://drive.google.com/file/d/17EiH6GePNnu0qrNb_0XHmwRu4y3liHjs/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+            <div class="book-preview-viewport">
+                <iframe src="https://drive.google.com/file/d/17EiH6GePNnu0qrNb_0XHmwRu4y3liHjs/preview" allow="autoplay"></iframe>
+            </div>
+        </a>
+        <div class="book-tags">
+            <span class="book-tag tag-science">Science</span>
+            <span class="book-tag tag-engineering">Engineering</span>
+        </div>
+    </div>
+
+    <div class="book-card" data-categories="science engineering">
+        <a href="https://drive.google.com/file/d/1Yqcy35S-ave3abtaOGWyineZdOr0jOI5/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+            <div class="book-preview-viewport">
+                <iframe src="https://drive.google.com/file/d/1Yqcy35S-ave3abtaOGWyineZdOr0jOI5/preview" allow="autoplay"></iframe>
+            </div>
+        </a>
+        <div class="book-tags">
+            <span class="book-tag tag-science">Science</span>
+            <span class="book-tag tag-engineering">Engineering</span>
+        </div>
+    </div>
+
+    <div class="book-card" data-categories="science">
+        <a href="https://drive.google.com/file/d/15ECihmw5oFFlXnbuxm8DoZiuHqJ7y5O2/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+            <div class="book-preview-viewport">
+                <iframe src="https://drive.google.com/file/d/15ECihmw5oFFlXnbuxm8DoZiuHqJ7y5O2/preview" allow="autoplay"></iframe>
+            </div>
+        </a>
+        <div class="book-tags">
+            <span class="book-tag tag-science">Science</span>
+        </div>
+    </div>
+
+</div>
+
+                    <div class="books-empty" id="booksEmpty">
+                        <div class="empty-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
                         </div>
+                        <h3 class="display-font">New titles on the way</h3>
+                        <p>We're developing more books for this category — check back soon!</p>
                     </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div id="learning-view" class="page-view">
+            <section class="subpage-hero">
+                <h1 class="display-font">Learning</h1>
+                <p class="subpage-sub">Interactive lesson models, STEM based learning, and Workshops coming soon!! .</p>
+            </section>
+            <section class="learning-container">
+                <div class="blob blob-learning"></div>
+                <div class="orbit-wrap orbit-large" style="margin-bottom: 50px;">
+                    <div class="orbit-ring r1" style="border-color: rgba(11,18,41,0.2);"></div>
+                    <div class="orbit-ring r2" style="border-color: rgba(11,18,41,0.2);"></div>
+                    <div class="orbit-node">
+                        <div class="orbit-chip chip-s">S</div>
+                    </div>
+                    <div class="orbit-node">
+                        <div class="orbit-chip chip-t">T</div>
+                    </div>
+                    <div class="orbit-node rev">
+                        <div class="orbit-chip chip-e">E</div>
+                    </div>
+                    <div class="orbit-node rev">
+                        <div class="orbit-chip chip-m">M</div>
+                    </div>
+                    <div class="orbit-core" style="width: 62%; height: 62%; border-width: 8px;">
+                        <img src="IMG_4433.png" alt="Spark2STEM Logo">
+                    </div>
+                </div>
+                <h2 class="display-font" style="font-size: 3rem; margin-bottom: 12px; text-align: center;">Coming soon!</h2>
+                <p style="color: var(--ink-soft); font-size: 1.15rem; max-width: 500px; text-align: center; line-height: 1.6;">Interactive lesson models, STEM based learning, and workshops coming soon!</p>
+            </section>
+        </div>
 
         <div id="chapters-view" class="page-view">
             <section class="subpage-hero">
