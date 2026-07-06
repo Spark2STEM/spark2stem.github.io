@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -187,7 +187,7 @@
             padding: 5px 0;
         }
 
-        nav a:not(.btn-nav-contact)::after {
+        nav a:not(.btn-nav-contact):::after {
             content: '';
             position: absolute;
             bottom: 0;
@@ -1017,7 +1017,7 @@
 
         .book-preview-wrapper:hover .book-preview-viewport {
             transform: translateY(-8px);
-            box-shadow: 0 26px 50px rgba(11,18,41,0.2);
+            box-shadow: 0 26px 50px rgba(11, 18, 41, 0.2);
         }
 
         .book-preview-viewport iframe { width: 100%; height: 100%; border: 0; pointer-events: none; }
@@ -1521,54 +1521,64 @@
                     <button class="filter-pill" data-filter="coding" onclick="filterBooks('coding', this)">Coding</button>
                 </div>
 
-<div class="books-preview-grid" id="booksGrid">
+                <div class="books-preview-grid" id="booksGrid">
 
-    <div class="book-card" data-categories="science engineering">
-        <a href="https://drive.google.com/file/d/17EiH6GePNnu0qrNb_0XHmwRu4y3liHjs/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-            <div class="book-preview-viewport">
-                <iframe src="https://drive.google.com/file/d/17EiH6GePNnu0qrNb_0XHmwRu4y3liHjs/preview" allow="autoplay"></iframe>
-            </div>
-        </a>
-        <div class="book-tags">
-            <span class="book-tag tag-science">Science</span>
-            <span class="book-tag tag-engineering">Engineering</span>
-        </div>
-    </div>
-
-    <div class="book-card" data-categories="science engineering">
-        <a href="https://drive.google.com/file/d/1Yqcy35S-ave3abtaOGWyineZdOr0jOI5/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-            <div class="book-preview-viewport">
-                <iframe src="https://drive.google.com/file/d/1Yqcy35S-ave3abtaOGWyineZdOr0jOI5/preview" allow="autoplay"></iframe>
-            </div>
-        </a>
-        <div class="book-tags">
-            <span class="book-tag tag-science">Science</span>
-            <span class="book-tag tag-engineering">Engineering</span>
-        </div>
-    </div>
-
-    <div class="book-card" data-categories="science">
-        <a href="https://drive.google.com/file/d/15ECihmw5oFFlXnbuxm8DoZiuHqJ7y5O2/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-            <div class="book-preview-viewport">
-                <iframe src="https://drive.google.com/file/d/15ECihmw5oFFlXnbuxm8DoZiuHqJ7y5O2/preview" allow="autoplay"></iframe>
-            </div>
-        </a>
-        <div class="book-tags">
-            <span class="book-tag tag-science">Science</span>
-        </div>
-    </div>
-
-</div>
-
-                    <div class="books-empty" id="booksEmpty">
-                        <div class="empty-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    <div class="book-card" data-categories="science engineering">
+                        <a href="https://drive.google.com/file/d/17EiH6GePNnu0qrNb_0XHmwRu4y3liHjs/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe src="https://drive.google.com/file/d/17EiH6GePNnu0qrNb_0XHmwRu4y3liHjs/preview" allow="autoplay"></iframe>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-science">Science</span>
+                            <span class="book-tag tag-engineering">Engineering</span>
                         </div>
-                        <h3 class="display-font">New titles on the way</h3>
-                        <p>We're developing more books for this category — check back soon!</p>
+                    </div>
+
+                    <div class="book-card" data-categories="science engineering">
+                        <a href="https://drive.google.com/file/d/1Yqcy35S-ave3abtaOGWyineZdOr0jOI5/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe src="https://drive.google.com/file/d/1Yqcy35S-ave3abtaOGWyineZdOr0jOI5/preview" allow="autoplay"></iframe>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-science">Science</span>
+                            <span class="book-tag tag-engineering">Engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="science">
+                        <a href="https://drive.google.com/file/d/15ECihmw5oFFlXnbuxm8DoZiuHqJ7y5O2/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe src="https://drive.google.com/file/d/15ECihmw5oFFlXnbuxm8DoZiuHqJ7y5O2/preview" allow="autoplay"></iframe>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-science">Science</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="science">
+                        <a href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe src="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto" allow="autoplay"></iframe>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-science">Science</span>
+                        </div>
                     </div>
 
                 </div>
+
+                <div class="books-empty" id="booksEmpty">
+                    <div class="empty-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    </div>
+                    <h3 class="display-font">New titles on the way</h3>
+                    <p>We're developing more books for this category — check back soon!</p>
+                </div>
+
             </section>
         </div>
 
