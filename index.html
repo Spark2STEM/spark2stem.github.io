@@ -1060,6 +1060,47 @@
         .tag-finance { background: var(--finance); }
         .tag-coding { background: var(--coding); }
 
+        .audiobook-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px 6px 6px;
+            border-radius: 100px;
+            background: var(--indigo-tint);
+            color: var(--indigo-deep);
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-weight: 600;
+            width: fit-content;
+            border: 1px solid transparent;
+            transition: all 0.3s var(--ease);
+        }
+
+        .audiobook-badge:hover {
+            background: var(--indigo);
+            color: var(--paper);
+            transform: translateY(-2px);
+        }
+
+        .audiobook-badge .audiobook-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--indigo);
+            color: var(--paper);
+            flex-shrink: 0;
+        }
+
+        .audiobook-badge:hover .audiobook-icon {
+            background: var(--paper);
+            color: var(--indigo);
+        }
+
+        .audiobook-badge .audiobook-icon svg { width: 12px; height: 12px; }
+
         .books-empty {
             display: none;
             grid-column: 1 / -1;
@@ -1577,6 +1618,12 @@
                             <span class="book-tag tag-science">Science</span>
                             <span class="book-tag tag-engineering">Engineering</span>
                         </div>
+                        <a href="https://drive.google.com/file/d/1Xo0x6JM0NI8JYm2aY8fg89tj7csjubwm/view?usp=sharing" target="_blank" class="audiobook-badge">
+                            <span class="audiobook-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                            </span>
+                            <span>Audiobook (Tamil) · By Dhakshika Giridhar</span>
+                        </a>
                     </div>
 
                     <div class="book-card" data-categories="science">
@@ -1588,6 +1635,12 @@
                         <div class="book-tags">
                             <span class="book-tag tag-science">Science</span>
                         </div>
+                        <a href="https://drive.google.com/file/d/14_wYqhNoZS87AS36atWTDJ0THSqMhQxX/view?usp=sharing" target="_blank" class="audiobook-badge">
+                            <span class="audiobook-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                            </span>
+                            <span>Audiobook (English) · By Sruthi V</span>
+                        </a>
                     </div>
 
                     <div class="book-card" data-categories="science">
@@ -1647,6 +1700,52 @@
                         </a>
                         <div class="book-tags">
                             <span class="book-tag tag-science">Science</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="technology engineering">
+                        <a href="https://drive.google.com/file/d/1L7Rpg5XgOFVPrSnRriqYqxfkeP-rWLKt/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe src="https://drive.google.com/file/d/1L7Rpg5XgOFVPrSnRriqYqxfkeP-rWLKt/preview" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">Maya and the Magic Magnets</h3>
+                                <p class="lesson-author">By: Kanav Thonda</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-technology">Technology</span>
+                            <span class="book-tag tag-engineering">Engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="finance">
+                        <a href="https://drive.google.com/file/d/1KrDarg5-knHE7JdJxHsFVm2A2MzJ1nnv/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe src="https://drive.google.com/file/d/1KrDarg5-knHE7JdJxHsFVm2A2MzJ1nnv/preview" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">Taxes for Kids</h3>
+                                <p class="lesson-author">By: Weza Mwiwa</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-finance">Finance</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="finance">
+                        <a href="https://drive.google.com/file/d/1VHdXwXbTZcwvWzqsNkDJASZ3TeyoW1mp/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe src="https://drive.google.com/file/d/1VHdXwXbTZcwvWzqsNkDJASZ3TeyoW1mp/preview" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">What we really need?</h3>
+                                <p class="lesson-author">By: Aarna Mangalgi</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-finance">Finance</span>
                         </div>
                     </div>
 
@@ -1728,6 +1827,99 @@
                             </a>
                             <div class="book-tags">
                                 <span class="book-tag tag-engineering">Engineering</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="technology coding">
+                            <a href="https://drive.google.com/file/d/1GbPgST7QDDfT2Zq7016S8lkdOp1HffeK/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe src="https://drive.google.com/file/d/1GbPgST7QDDfT2Zq7016S8lkdOp1HffeK/preview" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Become A Robot Programmer</h3>
+                                    <p class="lesson-author">By: Mia</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-technology">Technology</span>
+                                <span class="book-tag tag-coding">Coding</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/1pmzMuAjCMyqPiFEdqDjsZmVRaD_2nnIQ/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe src="https://drive.google.com/file/d/1pmzMuAjCMyqPiFEdqDjsZmVRaD_2nnIQ/preview" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Seasons</h3>
+                                    <p class="lesson-author">By: Zoha Jahanzaib</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science technology engineering">
+                            <a href="https://drive.google.com/file/d/13w57pOmRgeqwk8h64dYtVEQLF6a-a1i_/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe src="https://drive.google.com/file/d/13w57pOmRgeqwk8h64dYtVEQLF6a-a1i_/preview" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Journey with GPS</h3>
+                                    <p class="lesson-author">By: Lakshitha Bhandari</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                                <span class="book-tag tag-technology">Technology</span>
+                                <span class="book-tag tag-engineering">Engineering</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/1aa8qiNI20Ko8L-S3uO77f1Jq3Cf1jsPY/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe src="https://drive.google.com/file/d/1aa8qiNI20Ko8L-S3uO77f1Jq3Cf1jsPY/preview" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Cells</h3>
+                                    <p class="lesson-author">By: Nethra</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/1LyKzhqKSa4eafOVbNwhGDYbV_Ul2irL0/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe src="https://drive.google.com/file/d/1LyKzhqKSa4eafOVbNwhGDYbV_Ul2irL0/preview" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Solar energy</h3>
+                                    <p class="lesson-author">By: Lyrik</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/1uNT9663LEdeWXMQ4alUiB5jeWTP1AQnw/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe src="https://drive.google.com/file/d/1uNT9663LEdeWXMQ4alUiB5jeWTP1AQnw/preview" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">The Super Hard Working Heart</h3>
+                                    <p class="lesson-author">By: Trisha Patel</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
                             </div>
                         </div>
 
