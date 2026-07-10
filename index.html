@@ -1101,6 +1101,12 @@
 
         .audiobook-badge .audiobook-icon svg { width: 12px; height: 12px; }
 
+        .audiobook-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
         .books-empty {
             display: none;
             grid-column: 1 / -1;
@@ -1601,13 +1607,24 @@
                             <div class="book-preview-viewport">
                                 <iframe data-src="https://drive.google.com/file/d/17EiH6GePNnu0qrNb_0XHmwRu4y3liHjs/preview" loading="lazy" allow="autoplay"></iframe>
                             </div>
-                            <div class="lesson-meta">
-                                <h3 class="lesson-title">Maya and the Missing Spark</h3>
-                            </div>
                         </a>
                         <div class="book-tags">
                             <span class="book-tag tag-science">Science</span>
                             <span class="book-tag tag-engineering">Engineering</span>
+                        </div>
+                        <div class="audiobook-list">
+                            <a href="https://drive.google.com/file/d/1WsOaTzRXI8geXr3SBcJrpTF-lx_9oxto/view?usp=sharing" target="_blank" class="audiobook-badge">
+                                <span class="audiobook-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                                </span>
+                                <span>Audiobook (Hindi) · By Trisha Patel</span>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1RQ38qL0ZjfAVD5IOzi3Al-LM1flXr9Ol/view?usp=sharing" target="_blank" class="audiobook-badge">
+                                <span class="audiobook-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                                </span>
+                                <span>Audiobook (English) · By Genesis Portillo</span>
+                            </a>
                         </div>
                     </div>
 
@@ -1615,9 +1632,6 @@
                         <a href="https://drive.google.com/file/d/1Yqcy35S-ave3abtaOGWyineZdOr0jOI5/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                             <div class="book-preview-viewport">
                                 <iframe data-src="https://drive.google.com/file/d/1Yqcy35S-ave3abtaOGWyineZdOr0jOI5/preview" loading="lazy" allow="autoplay"></iframe>
-                            </div>
-                            <div class="lesson-meta">
-                                <h3 class="lesson-title">Leo and the Lost Rocket</h3>
                             </div>
                         </a>
                         <div class="book-tags">
@@ -1630,27 +1644,12 @@
                             </span>
                             <span>Audiobook (Tamil) · By Dhakshika Giridhar</span>
                         </a>
-                        <a href="https://drive.google.com/file/d/1JrDwfZMHx6AhTMEnrMQfhWqrxQ-qB_Gq/view?usp=sharing" target="_blank" class="audiobook-badge">
-                            <span class="audiobook-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-                            </span>
-                            <span>Audiobook (Tamil) · By Jai Gopaldas</span>
-                        </a>
-                        <a href="https://drive.google.com/file/d/1PB-fBkr76ZwyutltXG5lisdj5HSo7vA3/view?usp=sharing" target="_blank" class="audiobook-badge">
-                            <span class="audiobook-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-                            </span>
-                            <span>Audiobook (Arabic) · By Nouray Magdy</span>
-                        </a>
                     </div>
 
                     <div class="book-card" data-categories="science">
                         <a href="https://drive.google.com/file/d/15ECihmw5oFFlXnbuxm8DoZiuHqJ7y5O2/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                             <div class="book-preview-viewport">
                                 <iframe data-src="https://drive.google.com/file/d/15ECihmw5oFFlXnbuxm8DoZiuHqJ7y5O2/preview" loading="lazy" allow="autoplay"></iframe>
-                            </div>
-                            <div class="lesson-meta">
-                                <h3 class="lesson-title">Maya and the Cloud Adventure</h3>
                             </div>
                         </a>
                         <div class="book-tags">
@@ -1661,18 +1660,6 @@
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
                             </span>
                             <span>Audiobook (English) · By Sruthi V</span>
-                        </a>
-                        <a href="https://drive.google.com/file/d/1tp3ZSAupgWMC34RW2V4QMHgk6sSutiDX/view?usp=sharing" target="_blank" class="audiobook-badge">
-                            <span class="audiobook-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-                            </span>
-                            <span>Audiobook (Spanish) · By Dhakshika Giridhar</span>
-                        </a>
-                        <a href="https://drive.google.com/file/d/1FyUTauoUmR3YLjJXnFcRcsHC8sNVJvNF/view?usp=sharing" target="_blank" class="audiobook-badge">
-                            <span class="audiobook-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-                            </span>
-                            <span>Audiobook (Chinese) · By Cindy Liu</span>
                         </a>
                     </div>
 
@@ -1689,12 +1676,6 @@
                         <div class="book-tags">
                             <span class="book-tag tag-science">Science</span>
                         </div>
-                        <a href="https://drive.google.com/file/d/1M8iyFiHlfImCqr4hl1n9PHiMiInwpIHn/view?usp=sharing" target="_blank" class="audiobook-badge">
-                            <span class="audiobook-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-                            </span>
-                            <span>Audiobook (English) · By Dhanishka</span>
-                        </a>
                     </div>
 
                     <div class="book-card" data-categories="science">
@@ -1710,12 +1691,6 @@
                         <div class="book-tags">
                             <span class="book-tag tag-science">Science</span>
                         </div>
-                        <a href="https://drive.google.com/file/d/197tRD-3WTAL9oN9MzUFk61aGtgVFc7GX/view?usp=sharing" target="_blank" class="audiobook-badge">
-                            <span class="audiobook-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-                            </span>
-                            <span>Audiobook (English) · By Aisha</span>
-                        </a>
                     </div>
 
                     <div class="book-card" data-categories="science">
@@ -1731,6 +1706,12 @@
                         <div class="book-tags">
                             <span class="book-tag tag-science">Science</span>
                         </div>
+                        <a href="https://drive.google.com/file/d/1eiUAedLB_BpU0NIKuYhk5oZY_pB_TWT_/view?usp=sharing" target="_blank" class="audiobook-badge">
+                            <span class="audiobook-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                            </span>
+                            <span>Audiobook (English) · By Hannah Rodrigues</span>
+                        </a>
                     </div>
 
                     <div class="book-card" data-categories="science">
@@ -1746,6 +1727,26 @@
                         <div class="book-tags">
                             <span class="book-tag tag-science">Science</span>
                         </div>
+                        <div class="audiobook-list">
+                            <a href="https://drive.google.com/file/d/1JTu5nkWIDcTfJqNMxCA7xSQLYX8a8qq-/view?usp=sharing" target="_blank" class="audiobook-badge">
+                                <span class="audiobook-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                                </span>
+                                <span>Audiobook (English) · By Johina Joseph</span>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1uOpyatzEX8lJwcb3UttWV0dcqF39eEkr/view?usp=sharing" target="_blank" class="audiobook-badge">
+                                <span class="audiobook-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                                </span>
+                                <span>Audiobook (Korean) · By Chaehee Park</span>
+                            </a>
+                            <a href="https://drive.google.com/file/d/15eNhm-DlODXlEN2ADGJeEBg4LQhLML6v/view?usp=sharing" target="_blank" class="audiobook-badge">
+                                <span class="audiobook-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                                </span>
+                                <span>Audiobook (Chinese) · By Hoy Qing</span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="book-card" data-categories="technology engineering">
@@ -1759,7 +1760,7 @@
                             </div>
                         </a>
                         <div class="book-tags">
-                            <span class="book-tag tag-technology">Science</span>
+                            <span class="book-tag tag-technology">Technology</span>
                             <span class="book-tag tag-engineering">Engineering</span>
                         </div>
                     </div>
@@ -1777,12 +1778,6 @@
                         <div class="book-tags">
                             <span class="book-tag tag-finance">Finance</span>
                         </div>
-                        <a href="https://drive.google.com/file/d/1p9XpTwwIEFoIg_sElpkaEEUD0a1UNSca/view?usp=sharing" target="_blank" class="audiobook-badge">
-                            <span class="audiobook-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-                            </span>
-                            <span>Audiobook (English) · By Ruth Ephrem</span>
-                        </a>
                     </div>
 
                     <div class="book-card" data-categories="finance">
@@ -1798,37 +1793,31 @@
                         <div class="book-tags">
                             <span class="book-tag tag-finance">Finance</span>
                         </div>
-                        <a href="https://drive.google.com/file/d/1PsctntjjGgSnKuQV4r1u5P8t3cjQ_Q_Z/view?usp=sharing" target="_blank" class="audiobook-badge">
-                            <span class="audiobook-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-                            </span>
-                            <span>Audiobook (English) · By Ezichim Ofordile</span>
-                        </a>
                     </div>
 
-                    <div class="book-card" data-categories="finance">
-                        <a href="https://drive.google.com/file/d/15gJ3mh5Zmxq9IJ-p8E3YpqpxH49-hpwI/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                    <div class="book-card" data-categories="math">
+                        <a href="https://drive.google.com/file/d/1WYC6dgWOlErU7MfL7dXgilajuVGYuwvg/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                             <div class="book-preview-viewport">
-                                <iframe data-src="https://drive.google.com/file/d/15gJ3mh5Zmxq9IJ-p8E3YpqpxH49-hpwI/preview" loading="lazy" allow="autoplay"></iframe>
+                                <iframe data-src="https://drive.google.com/file/d/1WYC6dgWOlErU7MfL7dXgilajuVGYuwvg/preview" loading="lazy" allow="autoplay"></iframe>
                             </div>
                             <div class="lesson-meta">
-                                <h3 class="lesson-title">Penny's 2 Magic Cards</h3>
-                                <p class="lesson-author">By: claudia.santangeli</p>
+                                <h3 class="lesson-title">Shapes, Sides, and Vertices</h3>
+                                <p class="lesson-author">By: Fatima Shaikh</p>
                             </div>
                         </a>
                         <div class="book-tags">
-                            <span class="book-tag tag-finance">Finance</span>
+                            <span class="book-tag tag-math">Math</span>
                         </div>
                     </div>
 
                     <div class="book-card" data-categories="science">
-                        <a href="https://drive.google.com/file/d/1YUzz74kWQMwPp2kD_5Zar18PQ9R3VUVh/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                        <a href="https://drive.google.com/file/d/1rFErgFxJkgUUztYJAQmYxMQlHWOetsSI/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                             <div class="book-preview-viewport">
-                                <iframe data-src="https://drive.google.com/file/d/1YUzz74kWQMwPp2kD_5Zar18PQ9R3VUVh/preview" loading="lazy" allow="autoplay"></iframe>
+                                <iframe data-src="https://drive.google.com/file/d/1rFErgFxJkgUUztYJAQmYxMQlHWOetsSI/preview" loading="lazy" allow="autoplay"></iframe>
                             </div>
                             <div class="lesson-meta">
-                                <h3 class="lesson-title">The Tree that Forgot How to Eat</h3>
-                                <p class="lesson-author">By: Zarnab Zainab</p>
+                                <h3 class="lesson-title">3 States of Matter</h3>
+                                <p class="lesson-author">By: Alicia Tu</p>
                             </div>
                         </a>
                         <div class="book-tags">
@@ -1836,33 +1825,123 @@
                         </div>
                     </div>
 
-                    <div class="book-card" data-categories="coding">
-                        <a href="https://drive.google.com/file/d/15kqAmu9c--kIjIIi2g1AYfMNesiokCDd/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                            <div class="book-preview-viewport">
-                                <iframe data-src="https://drive.google.com/file/d/15kqAmu9c--kIjIIi2g1AYfMNesiokCDd/preview" loading="lazy" allow="autoplay"></iframe>
-                            </div>
-                            <div class="lesson-meta">
-                                <h3 class="lesson-title">Binary Code for Kids</h3>
-                                <p class="lesson-author">By: Weza Mwiwa</p>
-                            </div>
-                        </a>
-                        <div class="book-tags">
-                            <span class="book-tag tag-coding">Coding</span>
-                        </div>
-                    </div>
-
                     <div class="book-card" data-categories="science">
-                        <a href="https://drive.google.com/file/d/1-WLHIlPixxXKvJlLvLitd2f_qAYUe9Ci/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                        <a href="https://drive.google.com/file/d/1glBvyvlGyvg0sGC5RlyRxZaM-rgf45ms/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                             <div class="book-preview-viewport">
-                                <iframe data-src="https://drive.google.com/file/d/1-WLHIlPixxXKvJlLvLitd2f_qAYUe9Ci/preview" loading="lazy" allow="autoplay"></iframe>
+                                <iframe data-src="https://drive.google.com/file/d/1glBvyvlGyvg0sGC5RlyRxZaM-rgf45ms/preview" loading="lazy" allow="autoplay"></iframe>
                             </div>
                             <div class="lesson-meta">
-                                <h3 class="lesson-title">Solar Panels</h3>
-                                <p class="lesson-author">by Can K</p>
+                                <h3 class="lesson-title">Mr. Seed's Dream</h3>
+                                <p class="lesson-author">By: Kimberly A</p>
                             </div>
                         </a>
                         <div class="book-tags">
                             <span class="book-tag tag-science">Science</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="engineering">
+                        <a href="https://drive.google.com/file/d/1-YGHERdC95lfDihWTvkf549Op0Y6I4mR/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe data-src="https://drive.google.com/file/d/1-YGHERdC95lfDihWTvkf549Op0Y6I4mR/preview" loading="lazy" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">How Planes Fly</h3>
+                                <p class="lesson-author">By: Nuha Feroz</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-engineering">Engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="science">
+                        <a href="https://drive.google.com/file/d/14DBmpFeERJFRCKqSctJndkK1gIeXg7fk/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe data-src="https://drive.google.com/file/d/14DBmpFeERJFRCKqSctJndkK1gIeXg7fk/preview" loading="lazy" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">Why Do Rainbows Appear?</h3>
+                                <p class="lesson-author">By: Amber Hamann</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-science">Science</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="science">
+                        <a href="https://drive.google.com/file/d/1VEhMMjW0WTOLHyOSeARQu5wZKyWqkdK2/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe data-src="https://drive.google.com/file/d/1VEhMMjW0WTOLHyOSeARQu5wZKyWqkdK2/preview" loading="lazy" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">The Rock Cycle</h3>
+                                <p class="lesson-author">By: Keyaira Thomas</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-science">Science</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="engineering">
+                        <a href="https://drive.google.com/file/d/1m_46lenxK7dht2GG1NolN6T-l4wF-F4M/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe data-src="https://drive.google.com/file/d/1m_46lenxK7dht2GG1NolN6T-l4wF-F4M/preview" loading="lazy" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">How Do Dams Hold Water?</h3>
+                                <p class="lesson-author">By: Arham Gul</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-engineering">Engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="science">
+                        <a href="https://drive.google.com/file/d/1ZdoI1zM6hUEpip46gjo-BCqgDIji31bq/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe data-src="https://drive.google.com/file/d/1ZdoI1zM6hUEpip46gjo-BCqgDIji31bq/preview" loading="lazy" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">Renewable Energy Explained</h3>
+                                <p class="lesson-author">By: Naomi Cantu</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-science">Science</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="science">
+                        <a href="https://drive.google.com/file/d/1u-emGrEnERvBmkUQwBQsQ5M3yLRKDNXf/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe data-src="https://drive.google.com/file/d/1u-emGrEnERvBmkUQwBQsQ5M3yLRKDNXf/preview" loading="lazy" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">Five Senses</h3>
+                                <p class="lesson-author">By: Sahasra</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-science">Science</span>
+                        </div>
+                    </div>
+
+                    <div class="book-card" data-categories="engineering">
+                        <a href="https://drive.google.com/file/d/1LJ0rx4Kvm69BaxD3iIhVW_egyLymQczz/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <div class="book-preview-viewport">
+                                <iframe data-src="https://drive.google.com/file/d/1LJ0rx4Kvm69BaxD3iIhVW_egyLymQczz/preview" loading="lazy" allow="autoplay"></iframe>
+                            </div>
+                            <div class="lesson-meta">
+                                <h3 class="lesson-title">Leo's Big Lift</h3>
+                                <p class="lesson-author">By: Paarth C</p>
+                            </div>
+                        </a>
+                        <div class="book-tags">
+                            <span class="book-tag tag-engineering">Engineering</span>
                         </div>
                     </div>
 
@@ -1938,7 +2017,7 @@
                                     <iframe data-src="https://drive.google.com/file/d/1pQE0OrqUWOlg2aFawal0AcyWDF_PuLyM/preview" loading="lazy" allow="autoplay"></iframe>
                                 </div>
                                 <div class="lesson-meta">
-                                    <h3 class="lesson-title">Intro to Mechanical Engineering</h3>
+                                    <h3 class="lesson-title">Intro to Civil Engineering</h3>
                                     <p class="lesson-author">By: Kanav Thonda</p>
                                 </div>
                             </a>
@@ -2040,14 +2119,15 @@
                             </div>
                         </div>
 
+
                         <div class="book-card lesson-card" data-categories="science">
-                            <a href="https://drive.google.com/file/d/1hmReQu-N4wG0B9WHXAp2S7MR-WZAEEvs/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <a href="https://drive.google.com/file/d/1h3dKTYn2qwkBn3-tQDES5_4B9O9TCGPV/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                                 <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/1hmReQu-N4wG0B9WHXAp2S7MR-WZAEEvs/preview" loading="lazy" allow="autoplay"></iframe>
+                                    <iframe data-src="https://drive.google.com/file/d/1h3dKTYn2qwkBn3-tQDES5_4B9O9TCGPV/preview" loading="lazy" allow="autoplay"></iframe>
                                 </div>
                                 <div class="lesson-meta">
-                                    <h3 class="lesson-title">How Plants Make Their Food</h3>
-                                    <p class="lesson-author">By: Dinuga Herath</p>
+                                    <h3 class="lesson-title">DNA in Eukaryotes</h3>
+                                    <p class="lesson-author">By: Evalina Guzikowski</p>
                                 </div>
                             </a>
                             <div class="book-tags">
@@ -2055,105 +2135,29 @@
                             </div>
                         </div>
 
-                        <div class="book-card lesson-card" data-categories="engineering">
-                            <a href="https://drive.google.com/file/d/1qDkIRWHAHBwBRpeZNWPQYJsyqSScJ5ri/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/1McdJ_NMl4gvqUDUP_bqoHOZ6s9dzDJDR/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                                 <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/1qDkIRWHAHBwBRpeZNWPQYJsyqSScJ5ri/preview" loading="lazy" allow="autoplay"></iframe>
-                                </div>
-                                <div class="lesson-meta">
-                                    <h3 class="lesson-title">How Robots Work</h3>
-                                    <p class="lesson-author">By: Diti Hemrajani</p>
-                                </div>
-                            </a>
-                            <div class="book-tags">
-                                <span class="book-tag tag-engineering">Engineering</span>
-                            </div>
-                        </div>
-
-                        <div class="book-card lesson-card" data-categories="engineering">
-                            <a href="https://drive.google.com/file/d/1lkFvPDgtQM0wUhGvx1ITeEoNcADf4CQh/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                                <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/1lkFvPDgtQM0wUhGvx1ITeEoNcADf4CQh/preview" loading="lazy" allow="autoplay"></iframe>
-                                </div>
-                                <div class="lesson-meta">
-                                    <h3 class="lesson-title">Simple &amp; Complex Machines</h3>
-                                    <p class="lesson-author">By: ELISA RIDA</p>
-                                </div>
-                            </a>
-                            <div class="book-tags">
-                                <span class="book-tag tag-engineering">Engineering</span>
-                            </div>
-                        </div>
-
-                        <div class="book-card lesson-card" data-categories="finance">
-                            <a href="https://drive.google.com/file/d/13Zc4os5dF1NABTPgQG1jD0MLEiCXpQQ-/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                                <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/13Zc4os5dF1NABTPgQG1jD0MLEiCXpQQ-/preview" loading="lazy" allow="autoplay"></iframe>
-                                </div>
-                                <div class="lesson-meta">
-                                    <h3 class="lesson-title">Money Adventures</h3>
-                                    <p class="lesson-author">By: Nikhil Tadepalli</p>
-                                </div>
-                            </a>
-                            <div class="book-tags">
-                                <span class="book-tag tag-finance">Finance</span>
-                            </div>
-                        </div>
-
-                        <div class="book-card lesson-card" data-categories="technology">
-                            <a href="https://drive.google.com/file/d/1Mo2YXBk90XLsR1DEboxoUb2_5whAjaq4/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                                <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/1Mo2YXBk90XLsR1DEboxoUb2_5whAjaq4/preview" loading="lazy" allow="autoplay"></iframe>
-                                </div>
-                                <div class="lesson-meta">
-                                    <h3 class="lesson-title">How Robots Work</h3>
-                                    <p class="lesson-author">By: Divya Srinivasan</p>
-                                </div>
-                            </a>
-                            <div class="book-tags">
-                                <span class="book-tag tag-technology">Technology</span>
-                            </div>
-                        </div>
-
-                        <div class="book-card lesson-card" data-categories="technology">
-                            <a href="https://drive.google.com/file/d/1JOYqVyg-yzrSkCRipDh2NccJ_xHPq9Cq/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                                <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/1JOYqVyg-yzrSkCRipDh2NccJ_xHPq9Cq/preview" loading="lazy" allow="autoplay"></iframe>
+                                    <iframe data-src="https://drive.google.com/file/d/1McdJ_NMl4gvqUDUP_bqoHOZ6s9dzDJDR/preview" loading="lazy" allow="autoplay"></iframe>
                                 </div>
                                 <div class="lesson-meta">
                                     <h3 class="lesson-title">The Amazing Water Cycle</h3>
-                                    <p class="lesson-author">By: Gurgyan Aulakh</p>
+                                    <p class="lesson-author">By: Neehar Gowda</p>
                                 </div>
                             </a>
                             <div class="book-tags">
-                                <span class="book-tag tag-technology">Technology</span>
-                            </div>
-                        </div>
-
-                        <div class="book-card lesson-card" data-categories="technology science">
-                            <a href="https://drive.google.com/file/d/14uXq_swE_qLaT--9cgvKFli09tij434j/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                                <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/14uXq_swE_qLaT--9cgvKFli09tij434j/preview" loading="lazy" allow="autoplay"></iframe>
-                                </div>
-                                <div class="lesson-meta">
-                                    <h3 class="lesson-title">Why Do Boats Float?</h3>
-                                    <p class="lesson-author">By: raed dada</p>
-                                </div>
-                            </a>
-                            <div class="book-tags">
-                                <span class="book-tag tag-technology">Technology</span>
                                 <span class="book-tag tag-science">Science</span>
                             </div>
                         </div>
 
                         <div class="book-card lesson-card" data-categories="finance">
-                            <a href="https://drive.google.com/file/d/1FfTBUaCfzpYDnCRIApi0rMQiBZD5PoBr/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <a href="https://drive.google.com/file/d/18U71qKktpd9v6BAW22PeFXjlc0GRNzd0/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                                 <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/1FfTBUaCfzpYDnCRIApi0rMQiBZD5PoBr/preview" loading="lazy" allow="autoplay"></iframe>
+                                    <iframe data-src="https://drive.google.com/file/d/18U71qKktpd9v6BAW22PeFXjlc0GRNzd0/preview" loading="lazy" allow="autoplay"></iframe>
                                 </div>
                                 <div class="lesson-meta">
-                                    <h3 class="lesson-title">Mia's Money Jar</h3>
-                                    <p class="lesson-author">by Madiha Nawar</p>
+                                    <h3 class="lesson-title">Finance Explained with Fun</h3>
+                                    <p class="lesson-author">By: Lauren Napoles</p>
                                 </div>
                             </a>
                             <div class="book-tags">
@@ -2162,13 +2166,118 @@
                         </div>
 
                         <div class="book-card lesson-card" data-categories="science">
-                            <a href="https://drive.google.com/file/d/1jE2DlEQrVwC9NLi4X6q-SKhbYQMLjeQr/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <a href="https://drive.google.com/file/d/1IfBKPY3aMy9Uomub_1VHDu-s0gbSSwE3/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                                 <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/1jE2DlEQrVwC9NLi4X6q-SKhbYQMLjeQr/preview" loading="lazy" allow="autoplay"></iframe>
+                                    <iframe data-src="https://drive.google.com/file/d/1IfBKPY3aMy9Uomub_1VHDu-s0gbSSwE3/preview" loading="lazy" allow="autoplay"></iframe>
                                 </div>
                                 <div class="lesson-meta">
-                                    <h3 class="lesson-title">A Trip Through the Solar System</h3>
-                                    <p class="lesson-author">by Dinuga Herath</p>
+                                    <h3 class="lesson-title">How do vaccines work</h3>
+                                    <p class="lesson-author">By: Danah</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="technology">
+                            <a href="https://drive.google.com/file/d/1G3bjBeEDo5nNv8DEpw5d1YRS0UmXCWQt/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1G3bjBeEDo5nNv8DEpw5d1YRS0UmXCWQt/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">How do Robots Think</h3>
+                                    
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-technology">Technology</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/1yccZDovBJBsHIv2p5FiCGl-yWSp4n2Np/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1yccZDovBJBsHIv2p5FiCGl-yWSp4n2Np/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">How Plants Grow</h3>
+                                    <p class="lesson-author">By: Mahnia Niha</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="finance">
+                            <a href="https://drive.google.com/file/d/1nFur2zjS_oitnmCPLDf9hQLt7CHZOQUX/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1nFur2zjS_oitnmCPLDf9hQLt7CHZOQUX/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Profit and Loss</h3>
+                                    <p class="lesson-author">By: Pushpit Das</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-finance">Finance</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="finance">
+                            <a href="https://drive.google.com/file/d/1kmP4cbKYwlIx6ap0Yro9mJoVZjZW-AmE/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1kmP4cbKYwlIx6ap0Yro9mJoVZjZW-AmE/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Finance Basics</h3>
+                                    <p class="lesson-author">By: Marinna Chanda</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-finance">Finance</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/12sK4aoPfWx9GvGH-bhSckP7Z13HDp4Pu/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/12sK4aoPfWx9GvGH-bhSckP7Z13HDp4Pu/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Gravity</h3>
+                                    <p class="lesson-author">By: khailee mack</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="finance">
+                            <a href="https://drive.google.com/file/d/1ISjTJ_0F1zt_udDcHwgsZL1ksec2-2Vi/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1ISjTJ_0F1zt_udDcHwgsZL1ksec2-2Vi/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Let's learn about money</h3>
+                                    
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-finance">Finance</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/18ngxSAqtbqerdz5ZsgGlxpmA6ABgPmUT/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/18ngxSAqtbqerdz5ZsgGlxpmA6ABgPmUT/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Planets</h3>
+                                    <p class="lesson-author">By: Ramiya Nisanthakumar</p>
                                 </div>
                             </a>
                             <div class="book-tags">
@@ -2177,13 +2286,13 @@
                         </div>
 
                         <div class="book-card lesson-card" data-categories="science">
-                            <a href="https://drive.google.com/file/d/1u7ueqDs3wCeOD5lhzntKJEVjXAgWjs7w/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <a href="https://drive.google.com/file/d/1Ld1wgBFIIqHRxgZ6cJ_cb9LL8w1pT21S/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                                 <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/1u7ueqDs3wCeOD5lhzntKJEVjXAgWjs7w/preview" loading="lazy" allow="autoplay"></iframe>
+                                    <iframe data-src="https://drive.google.com/file/d/1Ld1wgBFIIqHRxgZ6cJ_cb9LL8w1pT21S/preview" loading="lazy" allow="autoplay"></iframe>
                                 </div>
                                 <div class="lesson-meta">
-                                    <h3 class="lesson-title">Why Do Volcanos Erupt</h3>
-                                    <p class="lesson-author">by Aksaya Saththiyasiritharan</p>
+                                    <h3 class="lesson-title">States of Matter</h3>
+                                    <p class="lesson-author">By: Jose Perez</p>
                                 </div>
                             </a>
                             <div class="book-tags">
@@ -2192,13 +2301,13 @@
                         </div>
 
                         <div class="book-card lesson-card" data-categories="science">
-                            <a href="https://drive.google.com/file/d/16QIoFIJswdptBxqU9cWpNol0hM9J4rZT/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <a href="https://drive.google.com/file/d/1n_Y_uCn_-isBE_g_-f7Bj3cguL1p01Rz/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                                 <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/16QIoFIJswdptBxqU9cWpNol0hM9J4rZT/preview" loading="lazy" allow="autoplay"></iframe>
+                                    <iframe data-src="https://drive.google.com/file/d/1n_Y_uCn_-isBE_g_-f7Bj3cguL1p01Rz/preview" loading="lazy" allow="autoplay"></iframe>
                                 </div>
                                 <div class="lesson-meta">
-                                    <h3 class="lesson-title">The Science of Rainbows</h3>
-                                    <p class="lesson-author">By: Ardita Tabaku</p>
+                                    <h3 class="lesson-title">Lift</h3>
+                                    <p class="lesson-author">By: Abigail Park</p>
                                 </div>
                             </a>
                             <div class="book-tags">
@@ -2207,13 +2316,13 @@
                         </div>
 
                         <div class="book-card lesson-card" data-categories="science">
-                            <a href="https://drive.google.com/file/d/1ms6vhZqxCzb6De_AFhgqOci7yAY9eFTm/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <a href="https://drive.google.com/file/d/1aRq1gQ_MC5AC4SpOGMzGRxeYyepYVZLb/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                                 <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/1ms6vhZqxCzb6De_AFhgqOci7yAY9eFTm/preview" loading="lazy" allow="autoplay"></iframe>
+                                    <iframe data-src="https://drive.google.com/file/d/1aRq1gQ_MC5AC4SpOGMzGRxeYyepYVZLb/preview" loading="lazy" allow="autoplay"></iframe>
                                 </div>
                                 <div class="lesson-meta">
-                                    <h3 class="lesson-title">Moon Phases</h3>
-                                    <p class="lesson-author">By: Aniela Araujo</p>
+                                    <h3 class="lesson-title">How does your brain work?</h3>
+                                    <p class="lesson-author">By: Ivanna Jacob</p>
                                 </div>
                             </a>
                             <div class="book-tags">
@@ -2222,17 +2331,137 @@
                         </div>
 
                         <div class="book-card lesson-card" data-categories="science">
-                            <a href="https://drive.google.com/file/d/11dDhL5guEewdL9rP1A4fiQ2etD-6l8i4/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                            <a href="https://drive.google.com/file/d/18utpSOwkW7rVJsPD1OU7q7XhQkfAVULa/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                                 <div class="book-preview-viewport">
-                                    <iframe data-src="https://drive.google.com/file/d/11dDhL5guEewdL9rP1A4fiQ2etD-6l8i4/preview" loading="lazy" allow="autoplay"></iframe>
+                                    <iframe data-src="https://drive.google.com/file/d/18utpSOwkW7rVJsPD1OU7q7XhQkfAVULa/preview" loading="lazy" allow="autoplay"></iframe>
                                 </div>
                                 <div class="lesson-meta">
-                                    <h3 class="lesson-title">The Science That Goes On While We're Asleep</h3>
-                                    <p class="lesson-author">by Aadya Sharma</p>
+                                    <h3 class="lesson-title">How do rainbows work?</h3>
+                                    <p class="lesson-author">By: Aikam Grewal</p>
                                 </div>
                             </a>
                             <div class="book-tags">
                                 <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="engineering">
+                            <a href="https://drive.google.com/file/d/1WxdRf3QtD1gHDnmm6b-Y87xBc4vYLHZq/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1WxdRf3QtD1gHDnmm6b-Y87xBc4vYLHZq/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">The Amazing World Of Robots</h3>
+                                    <p class="lesson-author">By: Liliana Guzman</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-engineering">Engineering</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/1O1flvFaajUn3TQ15fIlBnYFBrWh2TUWW/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1O1flvFaajUn3TQ15fIlBnYFBrWh2TUWW/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">The Water Cycle</h3>
+                                    <p class="lesson-author">By: Laia</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/17k-gC6656bEsfMIxRdu3mz63HwTaFXp2/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/17k-gC6656bEsfMIxRdu3mz63HwTaFXp2/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Maya and the Mountain</h3>
+                                    <p class="lesson-author">By: Ria patel</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="math">
+                            <a href="https://drive.google.com/file/d/1jAqpJoGcqmbKRHVzrr6e3fR8sreA4pD_/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1jAqpJoGcqmbKRHVzrr6e3fR8sreA4pD_/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Probability</h3>
+                                    <p class="lesson-author">By: Iyin Ogunyem</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-math">Math</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/1Mhx4z1iord6hpdaExpDnFNreq3blrv-6/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1Mhx4z1iord6hpdaExpDnFNreq3blrv-6/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Photosynthesis</h3>
+                                    <p class="lesson-author">By: Annalynn Griggs</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="finance">
+                            <a href="https://drive.google.com/file/d/1W_hJ7NyKFf91grUVveg9JLnWoIaZtsMu/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1W_hJ7NyKFf91grUVveg9JLnWoIaZtsMu/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Saving Money</h3>
+                                    <p class="lesson-author">By: Fiad Ahmed</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-finance">Finance</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="science">
+                            <a href="https://drive.google.com/file/d/1vP8tBBuC1Es2bhqalTHydaV_oqh3QIla/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1vP8tBBuC1Es2bhqalTHydaV_oqh3QIla/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Galaxies</h3>
+                                    <p class="lesson-author">By: Eveleen Kaur</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-science">Science</span>
+                            </div>
+                        </div>
+
+                        <div class="book-card lesson-card" data-categories="coding">
+                            <a href="https://drive.google.com/file/d/1PbPBRM4Cpkmwv9uz3tN8EFvtTDrRxXmd/view?usp=sharing" target="_blank" class="book-preview-wrapper">
+                                <div class="book-preview-viewport">
+                                    <iframe data-src="https://drive.google.com/file/d/1PbPBRM4Cpkmwv9uz3tN8EFvtTDrRxXmd/preview" loading="lazy" allow="autoplay"></iframe>
+                                </div>
+                                <div class="lesson-meta">
+                                    <h3 class="lesson-title">Loops</h3>
+                                    <p class="lesson-author">By: Prithvi R</p>
+                                </div>
+                            </a>
+                            <div class="book-tags">
+                                <span class="book-tag tag-coding">Coding</span>
                             </div>
                         </div>
 
@@ -2295,14 +2524,14 @@
         <div class="footer-inner">
             <div class="footer-logo">Spark<span style="color:var(--sci)">2</span>STEM</div>
             <div class="footer-links">
-                <a href="https://www.instagram.com/spark2stem/?hl=en" target="_blank" class="footer-link">
+                <a href="https://instagram.com/your_instagram_handle" target="_blank" class="footer-link">
                     <svg viewBox="0 0 24 24">
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.324 3.608 1.299.975.975 1.237 2.242 1.299 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.324 2.633-1.299 3.608-.975.975-2.242 1.237-3.608 1.299-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.324-3.608-1.299-.975-.975-1.237-2.242-1.299-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.324-2.633 1.299-3.608C5.633 2.557 6.9 2.296 8.266 2.233 9.532 2.175 9.912 2.163 12 2.163zm0 2.163c-3.138 0-3.51.011-4.764.068-1.205.055-1.851.288-2.288.727-.439.439-.672 1.083-.727 2.288-.057 1.254-.068 1.626-.068 4.764s.011 3.51.068 4.764c.055 1.205.288 1.851.727 2.288.439.439 1.083.672 2.288.727 1.254.057 1.626.068 4.764.068s3.51-.011 4.764-.068c1.205-.055 1.851-.288 2.288-.727.439-.439.672-1.083.727-2.288.057-1.254.068-1.626.068-4.764s-.011-3.51-.068-4.764c-.055-1.205-.288-1.851-.727-2.288-.439-.439-1.083-.672-2.288-.727-1.254-.057-1.626-.068-4.764-.068z M12 7.238a4.762 4.762 0 1 0 0 9.524 4.762 4.762 0 0 0 0-9.524zm0 2.571a2.19 2.19 0 1 1 0 4.381 2.19 2.19 0 0 1 0-4.381zm5.238-2.095a1.143 1.143 0 1 0 0 2.286 1.143 1.143 0 0 0 0-2.286z"/>
                     </svg>
                     <span>@Spark2STEM</span>
                 </a>
 
-                <a href="https://www.tiktok.com/@spark2stem" target="_blank" class="footer-link">
+                <a href="https://tiktok.com/@your_tiktok_handle" target="_blank" class="footer-link">
                     <svg viewBox="0 0 24 24">
                         <path d="M21 8.28a6.6 6.6 0 0 0-1.77-3.08A6.49 6.49 0 0 0 14.5 3v5.12a4.34 4.34 0 0 1-3.14-1.37A4.39 4.39 0 0 1 10 3.86v7.35a5.55 5.55 0 0 1-5.5 5.55A5.55 5.55 0 0 1 0 11.21a5.55 5.55 0 0 1 3.6-5.22A5.47 5.47 0 0 1 7.5 6v2.16A3.37 3.37 0 0 0 5.09 9.5a3.39 3.39 0 0 0-1.15 2.52A3.39 3.39 0 0 0 7.31 15a3.39 3.39 0 0 0 3.37-3.36V0h2.95a5.75 5.75 0 0 0 3.31 1.83v2.85a4.7 4.7 0 0 1-2.07-.63V5.5A4.64 4.64 0 0 0 21 8.28z"/>
                     </svg>
