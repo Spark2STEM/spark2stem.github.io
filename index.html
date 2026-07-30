@@ -7632,7 +7632,21 @@
         function loadViewIframes(view) {
             if (!view) return;
             view.querySelectorAll('iframe[data-src]').forEach(iframe => {
-                iframeObserver.observe(iframe);
+                const card = iframe.closest('.book-card');
+                const isHiddenCard = card && (card.classList.contains('hidden-card') || card.classList.contains('page-hidden'));
+                if (isHiddenCard) {
+                    /* Not on the current page/filter — keep it unloaded */
+                    if (iframe.getAttribute('src') !== 'about:blank') {
+                        iframe.setAttribute('src', 'about:blank');
+                    }
+                } else {
+                    /* On screen (or the only page worth showing, e.g. only 12 cards max) —
+                       load it right away instead of waiting for scroll intersection. */
+                    iframeObserver.unobserve(iframe);
+                    if (iframe.getAttribute('src') !== iframe.dataset.src) {
+                        iframe.setAttribute('src', iframe.dataset.src);
+                    }
+                }
             });
         }
 
@@ -7828,4 +7842,3 @@
     </script>
 </body>
 </html>
-
