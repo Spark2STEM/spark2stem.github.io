@@ -995,6 +995,61 @@
         }
 
         .book-card.hidden-card { display: none; }
+        .book-card.page-hidden { display: none; }
+
+        /* Pagination controls */
+        .pagination-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            max-width: 1150px;
+            margin: 46px auto 10px auto;
+        }
+
+        .page-nav-btn, .page-num-btn {
+            background: var(--paper);
+            border: 1.5px solid var(--line);
+            color: var(--ink);
+            font-family: inherit;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s var(--ease);
+        }
+
+        .page-nav-btn {
+            padding: 9px 18px;
+            border-radius: 100px;
+            font-size: 0.88rem;
+        }
+
+        .page-num-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            font-size: 0.88rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .page-nav-btn:hover:not(:disabled), .page-num-btn:hover:not(.active) {
+            border-color: var(--ink);
+            transform: translateY(-2px);
+        }
+
+        .page-nav-btn:disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+        }
+
+        .page-num-btn.active {
+            background: var(--ink);
+            border-color: var(--ink);
+            color: var(--paper);
+        }
 
         .book-preview-wrapper {
             display: block;
@@ -3742,21 +3797,6 @@
                         </div>
                     </div>
 
-<div class="book-card" data-categories="science">
-                        <a href="https://drive.google.com/file/d/1pk7k6HhpFMQ4BDBd5epl3uCUoBg1-XS7/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                            <div class="book-preview-viewport">
-                                <iframe data-src="https://drive.google.com/file/d/1pk7k6HhpFMQ4BDBd5epl3uCUoBg1-XS7/preview" loading="lazy" allow="autoplay"></iframe>
-                            </div>
-                            <div class="lesson-meta">
-                                <h3 class="lesson-title">STEM Fact Friday</h3>
-                                <p class="lesson-author">By: Medha Kannan</p>
-                            </div>
-                        </a>
-                        <div class="book-tags">
-                            <span class="book-tag tag-science">Science</span>
-                        </div>
-                    </div>
-
 <div class="book-card" data-categories="finance">
                         <a href="https://drive.google.com/file/d/1od_9eFcfc_rMcbTXSnGy11J1j1QKqedL/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                             <div class="book-preview-viewport">
@@ -4381,66 +4421,6 @@
                     </div>
 
 <div class="book-card" data-categories="science">
-                        <a href="https://drive.google.com/file/d/1xfeHet71muMyZUGYcKz96-hWPQYgxiZo/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                            <div class="book-preview-viewport">
-                                <iframe data-src="https://drive.google.com/file/d/1xfeHet71muMyZUGYcKz96-hWPQYgxiZo/preview" loading="lazy" allow="autoplay"></iframe>
-                            </div>
-                            <div class="lesson-meta">
-                                <h3 class="lesson-title">STEM Fact Friday</h3>
-                                <p class="lesson-author">By: Medha Kannan</p>
-                            </div>
-                        </a>
-                        <div class="book-tags">
-                            <span class="book-tag tag-science">Science</span>
-                        </div>
-                    </div>
-
-<div class="book-card" data-categories="science">
-                        <a href="https://drive.google.com/file/d/1IFzpAC4NZCLpJmSCGtrqq0gYK9tnywUu/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                            <div class="book-preview-viewport">
-                                <iframe data-src="https://drive.google.com/file/d/1IFzpAC4NZCLpJmSCGtrqq0gYK9tnywUu/preview" loading="lazy" allow="autoplay"></iframe>
-                            </div>
-                            <div class="lesson-meta">
-                                <h3 class="lesson-title">STEM Fact Friday</h3>
-                                <p class="lesson-author">By: Medha Kannan</p>
-                            </div>
-                        </a>
-                        <div class="book-tags">
-                            <span class="book-tag tag-science">Science</span>
-                        </div>
-                    </div>
-
-<div class="book-card" data-categories="science">
-                        <a href="https://drive.google.com/file/d/16VLrD9lYpxdA1MXyulDOx3s21ui7L5HG/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                            <div class="book-preview-viewport">
-                                <iframe data-src="https://drive.google.com/file/d/16VLrD9lYpxdA1MXyulDOx3s21ui7L5HG/preview" loading="lazy" allow="autoplay"></iframe>
-                            </div>
-                            <div class="lesson-meta">
-                                <h3 class="lesson-title">STEM Fact Friday</h3>
-                                <p class="lesson-author">By: Medha Kannan</p>
-                            </div>
-                        </a>
-                        <div class="book-tags">
-                            <span class="book-tag tag-science">Science</span>
-                        </div>
-                    </div>
-
-<div class="book-card" data-categories="science">
-                        <a href="https://drive.google.com/file/d/1TOpa3SzcM47MqTj40f4FjPiiQDAXsG0V/view?usp=sharing" target="_blank" class="book-preview-wrapper">
-                            <div class="book-preview-viewport">
-                                <iframe data-src="https://drive.google.com/file/d/1TOpa3SzcM47MqTj40f4FjPiiQDAXsG0V/preview" loading="lazy" allow="autoplay"></iframe>
-                            </div>
-                            <div class="lesson-meta">
-                                <h3 class="lesson-title">STEM Fact Friday</h3>
-                                <p class="lesson-author">By: Medha Kannan</p>
-                            </div>
-                        </a>
-                        <div class="book-tags">
-                            <span class="book-tag tag-science">Science</span>
-                        </div>
-                    </div>
-
-<div class="book-card" data-categories="science">
                         <a href="https://drive.google.com/file/d/1eHpvnEDiUPQRihNkwhugDyH4-mx6tt3O/view?usp=sharing" target="_blank" class="book-preview-wrapper">
                             <div class="book-preview-viewport">
                                 <iframe data-src="https://drive.google.com/file/d/1eHpvnEDiUPQRihNkwhugDyH4-mx6tt3O/preview" loading="lazy" allow="autoplay"></iframe>
@@ -4468,6 +4448,8 @@
 
 
 
+
+
                                     </div>
 
                 <div class="books-empty" id="booksEmpty">
@@ -4477,6 +4459,7 @@
                     <h3 class="display-font">New titles on the way</h3>
                     <p>We're developing more books for this category — check back soon!</p>
                 </div>
+                <div class="pagination-bar" id="booksPagination"></div>
             </section>
         </div>
 
@@ -7548,6 +7531,7 @@
                         <h3 class="display-font">New lessons on the way</h3>
                         <p>We're developing more items for this category — check back soon!</p>
                     </div>
+                    <div class="pagination-bar" id="lessonsPagination"></div>
 
                 </div>
             </section>
@@ -7728,23 +7712,81 @@
             header.classList.toggle('scrolled', window.scrollY > 12);
         });
 
+        /* ---------- Pagination ---------- */
+        const PAGE_SIZE = 12;
+        const pageState = { booksGrid: 1, lessonsGrid: 1 };
+
+        function renderPagination(paginationId, totalPages, currentPage, onChange) {
+            const el = document.getElementById(paginationId);
+            if (!el) return;
+            el.innerHTML = '';
+            if (totalPages <= 1) return;
+
+            const prevBtn = document.createElement('button');
+            prevBtn.className = 'page-nav-btn';
+            prevBtn.textContent = '‹ Back';
+            prevBtn.disabled = currentPage === 1;
+            prevBtn.onclick = () => onChange(currentPage - 1);
+            el.appendChild(prevBtn);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'page-num-btn' + (i === currentPage ? ' active' : '');
+                btn.textContent = i;
+                btn.setAttribute('aria-label', 'Page ' + i);
+                btn.onclick = () => onChange(i);
+                el.appendChild(btn);
+            }
+
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'page-nav-btn';
+            nextBtn.textContent = 'Forward ›';
+            nextBtn.disabled = currentPage === totalPages;
+            nextBtn.onclick = () => onChange(currentPage + 1);
+            el.appendChild(nextBtn);
+        }
+
+        function updateGridPage(gridId, cardSelector, paginationId, emptyStateId, page) {
+            const grid = document.getElementById(gridId);
+            if (!grid) return;
+            const allCards = Array.from(grid.querySelectorAll(cardSelector));
+            const filteredCards = allCards.filter(c => !c.classList.contains('hidden-card'));
+            const totalPages = Math.max(1, Math.ceil(filteredCards.length / PAGE_SIZE));
+            page = Math.min(Math.max(1, page), totalPages);
+            pageState[gridId] = page;
+
+            const start = (page - 1) * PAGE_SIZE;
+            const pageCards = new Set(filteredCards.slice(start, start + PAGE_SIZE));
+
+            allCards.forEach(card => {
+                card.classList.toggle('page-hidden', !pageCards.has(card));
+            });
+
+            renderPagination(paginationId, totalPages, page, (newPage) => {
+                updateGridPage(gridId, cardSelector, paginationId, emptyStateId, newPage);
+                grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                loadViewIframes(grid.closest('.page-view'));
+            });
+
+            const emptyState = document.getElementById(emptyStateId);
+            if (emptyState) emptyState.classList.toggle('show', filteredCards.length === 0);
+
+            loadViewIframes(grid.closest('.page-view'));
+        }
+
         /* Book category filter */
         function filterBooks(category, btn) {
             document.querySelectorAll('#filterBar .filter-pill').forEach(p => p.classList.remove('active'));
             btn.classList.add('active');
 
             const cards = document.querySelectorAll('#booksGrid .book-card');
-            let visibleCount = 0;
-
             cards.forEach(card => {
                 const cats = (card.getAttribute('data-categories') || '').split(' ');
                 const match = category === 'all' || cats.includes(category);
                 card.classList.toggle('hidden-card', !match);
-                if (match) visibleCount++;
             });
 
-            const emptyState = document.getElementById('booksEmpty');
-            emptyState.classList.toggle('show', visibleCount === 0);
+            updateGridPage('booksGrid', '.book-card', 'booksPagination', 'booksEmpty', 1);
         }
 
         /* Lesson category filter */
@@ -7753,18 +7795,18 @@
             btn.classList.add('active');
 
             const cards = document.querySelectorAll('#lessonsGrid .lesson-card');
-            let visibleCount = 0;
-
             cards.forEach(card => {
                 const cats = (card.getAttribute('data-categories') || '').split(' ');
                 const match = category === 'all' || cats.includes(category);
                 card.classList.toggle('hidden-card', !match);
-                if (match) visibleCount++;
             });
 
-            const emptyState = document.getElementById('lessonsEmpty');
-            emptyState.classList.toggle('show', visibleCount === 0);
+            updateGridPage('lessonsGrid', '.lesson-card', 'lessonsPagination', 'lessonsEmpty', 1);
         }
+
+        /* Initialize pagination on page load */
+        updateGridPage('booksGrid', '.book-card', 'booksPagination', 'booksEmpty', 1);
+        updateGridPage('lessonsGrid', '.lesson-card', 'lessonsPagination', 'lessonsEmpty', 1);
 
         /* Scroll reveal */
         const revealObserver = new IntersectionObserver((entries) => {
@@ -7786,3 +7828,4 @@
     </script>
 </body>
 </html>
+
