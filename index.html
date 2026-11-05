@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1430,6 +1431,29 @@
             .steps-grid::before { display: none; }
         }
 
+        /* Collapse the nav into the hamburger menu before the links run out of room */
+        @media (max-width: 1040px) {
+            .nav-toggle { display: flex; }
+            nav {
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                width: min(80vw, 320px);
+                background: var(--paper);
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 26px;
+                padding: 40px;
+                transform: translateX(100%);
+                transition: transform 0.4s var(--ease), box-shadow 0.4s ease;
+            }
+            nav.nav-open { transform: translateX(0); box-shadow: -10px 0 40px rgba(11,18,41,0.15); }
+            nav a { font-size: 1.15rem; }
+            .btn-nav-contact { margin-top: 10px; }
+        }
+
         @media (max-width: 768px) {
             .hero-container, .feature-split, .chapter-split {
                 flex-direction: column;
@@ -1456,10 +1480,9 @@
                 gap: 26px;
                 padding: 40px;
                 transform: translateX(100%);
-                transition: transform 0.4s var(--ease);
-                box-shadow: -10px 0 40px rgba(11,18,41,0.15);
+                transition: transform 0.4s var(--ease), box-shadow 0.4s ease;
             }
-            nav.nav-open { transform: translateX(0); }
+            nav.nav-open { transform: translateX(0); box-shadow: -10px 0 40px rgba(11,18,41,0.15); }
             nav a { font-size: 1.15rem; }
             .btn-nav-contact { margin-top: 10px; }
 
@@ -1487,6 +1510,98 @@
             .chapters-pitch-banner, .learning-container { padding-left: 5%; padding-right: 5%; }
             .hero-container { padding-left: 5%; padding-right: 5%; }
         }
+        /* ---------------- TEAM VIEW ---------------- */
+        .team-section { background-color: var(--paper); color: var(--ink); padding: 40px 8% 100px 8%; }
+        .team-content { max-width: 1000px; margin: 0 auto; width: 100%; }
+        .team-group + .team-group { margin-top: 64px; }
+
+        .team-group-title {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 1.6rem;
+            margin-bottom: 26px;
+        }
+        .team-group-title::after {
+            content: '';
+            flex: 1;
+            height: 1.5px;
+            background: repeating-linear-gradient(90deg, var(--line) 0, var(--line) 8px, transparent 8px, transparent 16px);
+        }
+
+        .team-grid { display: grid; gap: 22px; }
+        .team-grid-4 { grid-template-columns: repeat(4, 1fr); }
+        .team-grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .team-grid-center { display: flex; flex-wrap: wrap; justify-content: center; }
+        .team-grid-center > .team-card { flex: 0 1 calc((100% - 44px) / 3); }
+        .team-grid.reveal-stagger.in-view > *:nth-child(7) { transition-delay: 0.65s; }
+        .team-grid.reveal-stagger.in-view > *:nth-child(8) { transition-delay: 0.75s; }
+        .team-grid.reveal-stagger.in-view > *:nth-child(9) { transition-delay: 0.85s; }
+
+        .team-card {
+            --c: var(--indigo);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 32px 20px 26px 20px;
+            border-radius: 22px;
+            background: var(--cream);
+            border: 1px solid var(--line);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+        }
+        .team-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: var(--c);
+        }
+        .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
+
+        .team-avatar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            margin-bottom: 18px;
+            background: var(--c);
+            color: var(--paper);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            transition: transform 0.3s ease;
+        }
+        .team-card:hover .team-avatar { transform: scale(1.08); }
+
+        .team-name { font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; line-height: 1.25; word-break: break-word; }
+        .team-role {
+            margin-top: 8px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-soft);
+        }
+
+        @media (max-width: 900px) {
+            .team-grid-4, .team-grid-3 { grid-template-columns: repeat(2, 1fr); }
+            .team-grid-center > .team-card { flex-basis: calc((100% - 22px) / 2); }
+        }
+        @media (max-width: 480px) {
+            .team-section { padding-left: 5%; padding-right: 5%; }
+            .team-grid { gap: 14px; }
+            .team-grid-center > .team-card { flex-basis: calc((100% - 14px) / 2); }
+            .team-card { padding: 26px 12px 20px 12px; }
+            .team-avatar { width: 56px; height: 56px; font-size: 1.15rem; }
+            .team-name { font-size: 1rem; }
+            .team-role { font-size: 0.7rem; letter-spacing: 0.05em; }
+        }
     </style>
 </head>
 <body>
@@ -1505,6 +1620,7 @@
                 <a href="javascript:void(0);" onclick="switchView('learning-view')">Learning</a>
                 <a href="javascript:void(0);" onclick="switchView('chapters-view')">Our Chapters</a>
                 <a href="javascript:void(0);" onclick="switchView('volunteer-view')">Volunteering</a>
+                <a href="javascript:void(0);" onclick="switchView('team-view')">Our Team</a>
                 <a href="#contact" class="btn-nav-contact" onclick="closeNav()">Contact Us</a>
             </nav>
         </header>
@@ -13883,6 +13999,94 @@
                     <h2 class="display-font">Start Your Chapter</h2>
                     <p>We supply new student founders with complete lesson templates, verified volunteer credit logging validation, direct administrative approval guides, and access to our global workshop system repository.</p>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScTZY0n5aEq2HhQLcJVdpBQ6HjFgSz5GHU89Nb10pifQrw92Q/viewform" class="btn-primary" style="text-decoration: none; display: inline-block;" target="_blank">Apply to Open a Branch</a>
+                </div>
+            </section>
+        </div>
+
+        <div id="team-view" class="page-view">
+            <section class="subpage-hero">
+                <h1 class="display-font">Our Team</h1>
+                <p class="subpage-sub">Meet the students behind Spark2STEM who are working to bring hands-on STEM learning to kids everywhere.</p>
+            </section>
+
+            <section class="team-section">
+                <div class="team-content">
+                <div class="team-group">
+                    <h2 class="team-group-title display-font">Founders</h2>
+                    <div class="team-grid team-grid-4 reveal-stagger">
+                        <div class="team-card" style="--c: var(--coral);">
+                            <div class="team-avatar">NS</div>
+                            <h3 class="team-name">Naisha Shrivastava</h3>
+                            <p class="team-role">Founder</p>
+                        </div>
+                        <div class="team-card" style="--c: var(--indigo);">
+                            <div class="team-avatar">SK</div>
+                            <h3 class="team-name">Sahasra Kurumuru</h3>
+                            <p class="team-role">Co-Founder</p>
+                        </div>
+                        <div class="team-card" style="--c: var(--tech);">
+                            <div class="team-avatar">HB</div>
+                            <h3 class="team-name">Haneesha Bijnepally</h3>
+                            <p class="team-role">Co-Founder</p>
+                        </div>
+                        <div class="team-card" style="--c: var(--eng);">
+                            <div class="team-avatar">JS</div>
+                            <h3 class="team-name">Joshaan Singh</h3>
+                            <p class="team-role">Co-Founder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-group">
+                    <h2 class="team-group-title display-font">Leadership</h2>
+                    <div class="team-grid team-grid-center reveal-stagger">
+                        <div class="team-card" style="--c: var(--coding);">
+                            <div class="team-avatar">ZS</div>
+                            <h3 class="team-name">Zoey Suga</h3>
+                            <p class="team-role">Secretary</p>
+                        </div>
+                        <div class="team-card" style="--c: var(--finance);">
+                            <div class="team-avatar">AA</div>
+                            <h3 class="team-name">Ameer Abdulla</h3>
+                            <p class="team-role">Financial Officer</p>
+                        </div>
+                        <div class="team-card" style="--c: var(--math);">
+                            <div class="team-avatar">ML</div>
+                            <h3 class="team-name">Modaal Lee</h3>
+                            <p class="team-role">Marketing Officer</p>
+                        </div>
+                        <div class="team-card" style="--c: var(--sci);">
+                            <div class="team-avatar">EN</div>
+                            <h3 class="team-name">Elvin Nguyen</h3>
+                            <p class="team-role">Volunteer Head</p>
+                        </div>
+                        <div class="team-card" style="--c: var(--tech);">
+                            <div class="team-avatar">RA</div>
+                            <h3 class="team-name">Raniah Attameeni</h3>
+                            <p class="team-role">Volunteer Manager</p>
+                        </div>
+                        <div class="team-card" style="--c: var(--coral);">
+                            <div class="team-avatar">AM</div>
+                            <h3 class="team-name">Ana Sofia Montes</h3>
+                            <p class="team-role">Volunteer Manager</p>
+                        </div>
+                        <div class="team-card" style="--c: var(--eng);">
+                            <div class="team-avatar">FM</div>
+                            <h3 class="team-name">Frida Martinez</h3>
+                            <p class="team-role">Volunteer Manager</p>
+                        </div>
+                        <div class="team-card" style="--c: var(--indigo);">
+                            <div class="team-avatar">MB</div>
+                            <h3 class="team-name">Meghana Burra</h3>
+                            <p class="team-role">Volunteer Manager</p>
+                        </div>
+                        <div class="team-card" style="--c: var(--coding);">
+                            <div class="team-avatar">NN</div>
+                            <h3 class="team-name">Nandan Neelapala</h3>
+                            <p class="team-role">Volunteer Manager</p>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </section>
         </div>
